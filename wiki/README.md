@@ -1,5 +1,8 @@
 # Wiki-Seiten
 
-Diese Dateien sind der Inhalt für das GitHub-Wiki dieses Repos.
-Das Wiki liegt bei GitHub in einem eigenen Git-Repo (`playwithfun_feedback.wiki.git`),
-das erst existiert, nachdem im Browser die erste Wiki-Seite angelegt wurde.
+Diese Dateien sind die Quelle für das [GitHub-Wiki](https://github.com/ghinen/playwithfun_feedback/wiki).
+Bei jeder Änderung in diesem Ordner auf `main` überträgt die Action
+`.github/workflows/wiki-sync.yml` die Seiten automatisch ins Wiki.
+
+Dateiname = Seitenname (Bindestriche werden zu Leerzeichen), z. B. `Lobbys-und-Chat.md` → „Lobbys und Chat“.
+Diese README wird nicht übertragen.
