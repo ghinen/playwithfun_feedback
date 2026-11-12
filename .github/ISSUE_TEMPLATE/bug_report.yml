@@ -1,0 +1,98 @@
+name: 🐞 Fehler melden
+description: Etwas funktioniert nicht wie erwartet.
+title: "[Fehler] "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Danke, dass du hilfst, PlayWithFun besser zu machen! 🙏
+
+        ⚠️ **Meldungen sind öffentlich sichtbar.** Bitte keine persönlichen Daten, keine echten Namen von Mitspielern und keine Lobbycodes von laufenden Spielen angeben.
+        Sicherheitslücken bitte **nicht hier**, sondern per E-Mail melden (siehe Impressum).
+
+  - type: dropdown
+    id: spiel
+    attributes:
+      label: Bei welchem Spiel / Bereich?
+      options:
+        - Startseite / Lobby erstellen oder beitreten
+        - Lobby (Spieler, Einstellungen)
+        - Öffentliche Lobbys / Schnelles Spiel
+        - Chat
+        - Ich hab noch nie
+        - Wer würde eher …?
+        - Würdest du eher …?
+        - Wahrheit oder Pflicht
+        - Spielende / Neue Runde
+        - Sonstiges
+    validations:
+      required: true
+
+  - type: textarea
+    id: was
+    attributes:
+      label: Was ist passiert?
+      description: Beschreibe den Fehler möglichst genau.
+      placeholder: z. B. „Nach der 5. Frage ist das Spiel bei allen hängen geblieben.“
+    validations:
+      required: true
+
+  - type: textarea
+    id: schritte
+    attributes:
+      label: Wie kann man den Fehler nachstellen?
+      placeholder: |
+        1. Lobby erstellen
+        2. Mit 3 Spielern „Wer würde eher“ starten
+        3. Ein Spieler lädt die Seite neu
+        4. …
+    validations:
+      required: false
+
+  - type: textarea
+    id: erwartet
+    attributes:
+      label: Was hättest du erwartet?
+    validations:
+      required: false
+
+  - type: dropdown
+    id: geraet
+    attributes:
+      label: Gerät
+      options:
+        - Smartphone (Android)
+        - Smartphone (iPhone)
+        - Tablet
+        - Computer / Laptop
+        - Sonstiges
+    validations:
+      required: true
+
+  - type: input
+    id: browser
+    attributes:
+      label: Browser
+      placeholder: z. B. Chrome, Safari, Firefox, Samsung Internet
+    validations:
+      required: false
+
+  - type: dropdown
+    id: haeufigkeit
+    attributes:
+      label: Wie oft tritt der Fehler auf?
+      options:
+        - Immer
+        - Manchmal
+        - Einmalig
+    validations:
+      required: false
+
+  - type: textarea
+    id: screenshots
+    attributes:
+      label: Screenshots (optional)
+      description: Einfach hier hineinziehen. Bitte vorher Namen und Chatnachrichten anderer Spieler unkenntlich machen.
+    validations:
+      required: false

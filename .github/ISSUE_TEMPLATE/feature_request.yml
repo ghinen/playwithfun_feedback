@@ -1,0 +1,51 @@
+name: 💡 Idee / Wunsch
+description: Ein neues Spiel, eine neue Funktion oder eine Verbesserung vorschlagen.
+title: "[Idee] "
+labels: ["enhancement"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Schön, dass du eine Idee hast! 💡
+        Schau bitte kurz in die [bestehenden Ideen](https://github.com/ghinen/playwithfun_feedback/issues?q=label%3Aenhancement), ob es den Vorschlag schon gibt – dann gib dort einfach ein 👍.
+
+  - type: dropdown
+    id: art
+    attributes:
+      label: Worum geht es?
+      options:
+        - Neues Spiel
+        - Neue Funktion
+        - Verbesserung an einem bestehenden Spiel
+        - Design / Bedienung
+        - Sonstiges
+    validations:
+      required: true
+
+  - type: textarea
+    id: idee
+    attributes:
+      label: Deine Idee
+      description: Was soll es geben bzw. was soll sich ändern?
+    validations:
+      required: true
+
+  - type: textarea
+    id: warum
+    attributes:
+      label: Warum wäre das gut?
+      description: Welches Problem löst es oder was macht es lustiger?
+    validations:
+      required: false
+
+  - type: textarea
+    id: ablauf
+    attributes:
+      label: Bei neuen Spielen – wie läuft eine Runde ab?
+      placeholder: |
+        z. B.:
+        1. Eine Frage erscheint
+        2. Alle tippen eine Zahl
+        3. Wer am nächsten dran ist, gewinnt
+    validations:
+      required: false

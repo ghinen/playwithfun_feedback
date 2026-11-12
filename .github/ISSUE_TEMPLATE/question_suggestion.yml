@@ -1,0 +1,60 @@
+name: 📝 Fragen / Aufgaben einreichen
+description: Neue Fragen für eines der Spiele vorschlagen.
+title: "[Fragen] "
+labels: ["enhancement"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Her mit den guten Fragen! 🎉
+        Eingereichte Fragen werden vor der Aufnahme geprüft und ggf. angepasst. Mit dem Absenden bist du einverstanden, dass sie in PlayWithFun verwendet werden.
+
+  - type: dropdown
+    id: spiel
+    attributes:
+      label: Für welches Spiel?
+      options:
+        - Ich hab noch nie
+        - Wer würde eher …?
+        - Würdest du eher …?
+        - Wahrheit oder Pflicht – Wahrheit
+        - Wahrheit oder Pflicht – Pflicht
+    validations:
+      required: true
+
+  - type: dropdown
+    id: kategorie
+    attributes:
+      label: Passende Kategorie
+      options:
+        - Alltag / Harmlos
+        - Lustig & Peinlich
+        - Beziehung & Flirten
+        - Party
+        - Schwierige Entscheidungen
+        - Spicy (18+)
+        - Neue Kategorie (bitte unten beschreiben)
+    validations:
+      required: true
+
+  - type: textarea
+    id: fragen
+    attributes:
+      label: Deine Fragen
+      description: Eine Frage pro Zeile. Bei „Würdest du eher“ bitte beide Optionen mit „ / “ trennen.
+      placeholder: |
+        Ich habe noch nie …
+        Wer würde eher …?
+        nie wieder Pizza essen / nie wieder Pasta essen
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: regeln
+    attributes:
+      label: Bitte bestätigen
+      options:
+        - label: Die Fragen beleidigen niemanden und enthalten keine echten Namen oder persönlichen Daten.
+          required: true
+        - label: Pflicht-Aufgaben sind ungefährlich und ohne das Teilen persönlicher Daten machbar.
+          required: true

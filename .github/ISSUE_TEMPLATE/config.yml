@@ -1,0 +1,11 @@
+blank_issues_enabled: false
+contact_links:
+  - name: 🎉 Zu PlayWithFun
+    url: https://playwithfun.de/
+    about: Direkt zum Spiel.
+  - name: 📖 Hilfe & FAQ (Wiki)
+    url: https://github.com/ghinen/playwithfun_feedback/wiki
+    about: Viele Fragen sind hier schon beantwortet.
+  - name: 🔒 Sicherheitslücke oder Datenschutzanliegen
+    url: https://playwithfun.de/impressum.html
+    about: Bitte NICHT öffentlich melden, sondern per E-Mail (Adresse im Impressum).
